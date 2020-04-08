@@ -1,0 +1,52 @@
+input {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid blue;
+    border-left: 1px solid blue;
+    transition-property: none !important;
+    transition: none !important;
+    box-shadow: 0s !important;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    border-left-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.986);
+}
+
+.my-text {
+    font-style: italic !important;
+    color: #2F4F4F;
+}
+
+.card-header {
+    background-color: #ced3de;
+    /* height: 5% !important; */
+    padding-left: 4% !important;
+}
+
+form {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.card {
+    margin-top: 15%;
+}
+
+.card {
+    /* border: 0; */
+    outline: 0;
+    /* border: 0; */
+    outline: 0;
+    border-bottom: 4px solid #ced3de;
+    border-left: 2px solid #ced3de;
+    transition-property: none !important;
+    transition: none !important;
+    box-shadow: 0s !important;
+}

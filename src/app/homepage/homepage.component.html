@@ -1,0 +1,82 @@
+<app-header></app-header>
+
+<div class="col-md-12 row my-3 ">
+
+    <div class="col-md-6 ">
+        <button type="button" class="btn btn-primary 
+        AddTaskbtn" [class.isDisabled]="disableAddCardButton" (click)="addToDoCard()">Add ToDo Task</button>
+    </div>
+    <div class="col-md-6 ">
+        <button type="button" class="btn btn-outline-secondary 
+        AddTaskbtn" routerLink='/maincard'>Back to Main Page</button>
+    </div>
+</div>
+<div class="container-fluid   mt-4">
+    <!-- <div class="col-md-12" style="border: 2px; border-color:black ;"> -->
+
+    <div class="row" *ngIf="firstTimeInitialize===true; else ShowImage">
+
+
+        <form [formGroup]="toDoForm" style="width: 100%;">
+
+
+
+
+            <div formArrayName="card">
+                <ng-container *ngIf="getArray">
+                    <div class="row myMainCard">
+                        <div class="" *ngFor="let cardArr of getArray.controls; let i = index" [formGroupName]=i>
+
+                            <div class="card mb-4">
+                                <div class="card-body ">
+
+                                    <div class="card-title">
+                                        <input type="text" class="form-control" formControlName=title style="width: 70%;" [class.is-invalid]="cardArr.get('title').invalid 
+                                    && cardArr.get('title').touched" placeholder="Enter Title" required>
+                                        <div *ngIf="cardArr.get('title').invalid && cardArr.get('title').touched">
+                                            <small class="text-danger" style="margin-left:0%;" *ngIf="cardArr.get('title').errors?.required">Title is Mandatory</small>
+                                            <small class="text-danger" style="margin-left:0%;" *ngIf="cardArr.get('title').errors?.maxlength">Title must be maximum of 25 characters</small>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <!-- <input type="text" class="form-control " rows="5" style="width: 70%;" placeholder="Enter Text"> -->
+                                        <textarea name="comment" placeholder="Message" rows="4" formControlName=text class="form-control " id="comment"></textarea>
+                                        <span>
+                                            <input type="text" [class.d-none]="displaystatus" class="form-control" formControlName=saveStatus style="width: 90%;" placeholder="saveStatus">
+                                            <input type="text" [class.d-none]="displaystatus" class="form-control" formControlName=todoStatus style="width: 90%;" placeholder="todoStatus">
+                                        </span>
+                                    </div>
+                                    <!-- {{toDoForm.invalid}}\\{{toDoForm.untouched}}\\ {{(toDoForm.invalid ||toDoForm.untouched)}} ||{{(updatedExternalData || toDoForm.invalid)}} -->
+                                    <button type="button" class="btn btn-outline-primary mt-3" (click)="submitCardData(i)" [disabled]="(toDoForm.invalid ||
+                                    toDoForm.untouched) && (updatedExternalData || toDoForm.invalid) ">Save</button>
+                                    <!-- {{toDoForm.invalid}}||{{toDoForm.touched}}||{{cannotComplete}} -->
+                                    <button class="btn btn-outline-secondary mt-3 ml-4" [disabled]="toDoForm.invalid ||
+                                        toDoForm.touched || cannotComplete" (click)="TaskCompleted()">Completed</button>
+                                    <button (click)="deleteToDoCard(i)" class="btn btn-outline-danger mt-3 ml-4">Remove</button>
+
+                                </div>
+
+                            </div>
+                            <hr style="margin-top: 7%;">
+                        </div>
+                    </div>
+                </ng-container>
+
+            </div>
+
+        </form>
+
+    </div>
+    <ng-template #ShowImage>
+        <div style="margin-top: 8%;">
+            <div class="img-responsive">
+
+                <img src="../../assets/images/EmptyBucket.jfif" class=" rounded mx-auto
+                     d-block" style="height:15% !important; width: 15% !important;" alt="Responsive image">
+            </div>
+            <span class="d-inline-block pl-3 my-text text-center font-weight-bold" style="width:100%;font-size: x-large;">There is Nothing to Show in Your ToDo Bucket List</span>
+        </div>
+    </ng-template>
+
+
+</div>

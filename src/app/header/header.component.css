@@ -1,0 +1,33 @@
+.my-text {
+    font-style: italic !important;
+    color: #2F4F4F;
+}
+
+.bg-light {
+    background-color: #ced3de !important;
+    /* background-color: #ced3de !important; */
+}
+
+input {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #2F4F4F;
+    border-left: 1px solid #2F4F4F;
+    background-color: #ced3de !important;
+    transition-property: none !important;
+    transition: none !important;
+    box-shadow: 0s !important;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #2F4F4F;
+    border-color: #2F4F4F;
+    border-left-color: #2F4F4F;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #ced3de !important;
+}
+
+.btn-outline-secondary {
+    border-color: #2F4F4F !important;
+}

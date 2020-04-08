@@ -1,0 +1,120 @@
+input {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid blue;
+    border-left: 1px solid blue;
+    transition-property: none !important;
+    transition: none !important;
+    box-shadow: 0s !important;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    border-left-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.986);
+}
+
+textarea {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid blue;
+    border-left: 1px solid blue;
+    transition-property: none !important;
+    transition: none !important;
+    box-shadow: 0s !important;
+}
+
+
+/* .form-control:focus .form-control-focus {
+    border-color: none !important;
+    outline: 0 !important;
+    box-shadow: 2px !important;
+} */
+
+img {
+    width: 10% !important;
+    height: 10% !important;
+}
+
+.my-text {
+    font-style: italic !important;
+    color: #2F4F4F;
+}
+
+.bg-light {
+    background-color: #ced3de !important;
+}
+
+
+/* .myMainCard:hover {
+    border: 0;
+    outline: 0;
+    border: 0;
+    outline: 0;
+    border-bottom: 6px solid #ced3de;
+    border-left: 4px solid #ced3de;
+    transition-property: none !important;
+    transition: none !important;
+    box-shadow: 0s !important;
+    transform: scale3d(1.1, 1.1, 1.1);
+} */
+
+.card-body {
+    border: 0;
+    outline: 0;
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid #ced3de;
+    border-left: 2px solid #ced3de;
+    transition-property: none !important;
+    transition: none !important;
+    box-shadow: 0s !important;
+}
+
+
+/* .form-control:hover {
+    zoom: 1;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    outline: none;
+} */
+
+.btn-outline-success {
+    color: #2F4F4F !important;
+    border-color: #2F4F4F !important;
+}
+
+.myMainCard {
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2%;
+}
+
+.AddTaskbtn {
+    width: 100% !important;
+    position: relative;
+}
+
+
+/* .col-md-7 {
+    overflow-y: scroll;
+    height: 600px;
+} */
+
+
+/* .right-block {
+    position: fixed;
+    margin-left: 55%; 
+}*/
+
+
+/* .col-md-7{
+    position: absolute;
+} */

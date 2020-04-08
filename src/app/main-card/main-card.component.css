@@ -1,0 +1,89 @@
+input {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid blue;
+    border-left: 1px solid blue;
+    transition-property: none !important;
+    transition: none !important;
+    box-shadow: 0s !important;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    border-left-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.986);
+}
+
+.Addcardbtn {
+    width: 100% !important;
+    position: relative;
+}
+
+.myMainCard {
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2%;
+}
+
+hr {
+    color: #007bff !important;
+}
+
+.cardsection {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.myTextHeading {
+    font-style: italic !important;
+    color: #2F4F4F;
+    font-weight: bolder;
+    font-size: 200% !important;
+}
+
+.card-header {
+    background-color: #ced3de !important;
+}
+
+.my-text {
+    font-style: italic !important;
+    color: #2F4F4F;
+}
+
+.card-body {
+    border: 0;
+    outline: 0;
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid #ced3de;
+    border-left: 2px solid #ced3de;
+    transition-property: none !important;
+    transition: none !important;
+    box-shadow: 0s !important;
+}
+
+
+/* .myCustomCard {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+} */
+
+
+/* .myCustomCardcontent {
+    margin: 5%;
+} */

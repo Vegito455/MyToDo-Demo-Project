@@ -1,0 +1,17 @@
+<!-- Image and text -->
+
+<nav class="navbar navbar-light bg-light mb-1">
+    <a class="navbar-brand" href="#">
+        <!-- <img src="../../assets/images/MyToDoImage.png" width="60" height="30" class="d-inline-block align-top" alt=""> Bootstrap -->
+        <h4 class="d-inline-block align-top my-text font-weight-bold">My ToDo Demo Project</h4>
+    </a>
+    <!-- *ngIf="shownavbutton" -->
+
+    <form class="form-inline" *ngIf="shownavbutton">
+        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0 ml-3" type="submit">Search</button> -->
+        <button class="btn btn-outline-danger 
+        my-2 my-sm-0 ml-4" routerLink="/login" (click)="Logout()" type="submit">Logout</button>
+    </form>
+</nav>
+<!-- <app-alerts></app-alerts> -->
