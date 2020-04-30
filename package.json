@@ -22,7 +22,7 @@
         "@syncfusion/ej2-angular-calendars": "^18.1.42",
         "angular-alert-module": "^2.0.3",
         "bootstrap": "^4.4.1",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "lodash": "^4.17.15",
         "ngx-toastr": "^10.0.4",
         "rxjs": "^6.0.0",
