@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   authenticatedUser: boolean = false;
   getAllUsersLS: string;
   getAllUsers: any = [];
-  uniqUserArray: any = [];
+  uniqUserArray = [];
   constructor(private router: Router,public shownavbtn:GlobalConstants,private toastrService: ToastrService) { }
 
   userModel = {
@@ -32,7 +32,8 @@ export class LoginComponent implements OnInit {
 
     this.shownavbtn.shownavbutton=false;
     this.getAllUsersLS = localStorage.getItem('users');
-    if (this.getAllUsersLS === null) {
+    console.log("this.getAllUsersLS--->",this.getAllUsersLS)
+    if (this.getAllUsersLS==undefined || this.getAllUsersLS == null) {
       this.getAllUsers = []
     }
     else {

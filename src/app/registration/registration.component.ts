@@ -15,7 +15,7 @@ export class RegistrationComponent implements OnInit {
   externaLoginUserData: any = (logindata as any).default;
   authenticatedUser: boolean = false;
   localdata: string;
-  getAllUsers: any;
+  getAllUsers: any=[];
   constructor(private router: Router, public shownavbtn: GlobalConstants, private toastrService: ToastrService) { }
 
   userModel = {
